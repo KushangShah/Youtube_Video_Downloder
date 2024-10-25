@@ -46,7 +46,7 @@
 
 ### 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/KushangShah/Youtube_Video_Downloader.git
+   git clone https://github.com/KushangShah/Youtube_Video_Downloder.git
    cd Youtube_Video_Downloader
    ```
 
