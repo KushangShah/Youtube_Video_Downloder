@@ -54,10 +54,15 @@
    ```bash
    pip install -r requirements.txt
    ```
+## OR
+### Directly connect to the virtual envirment provided in this file. Just type in your terminal
+```bash
+source ytenv/bin/activate
+```
 
 ### 3. **Run the app:**
    ```bash
-   python Youtube_Vid_Downloder.py
+   python3 Youtube_Vid_Downloder.py
    ```
 
 ## 🖥 Packaging the App for Distribution
@@ -73,17 +78,15 @@ pyinstaller --onefile --windowed Youtube_Vid_Downloder.py
 
 # 📂 Usage
 
-#### 1. **Enter the YouTube URL** in the provided text field.
+#### 1. **Enter the YouTube/Short/Reel URL** in the provided text field.
 #### 2. **Choose the desired format**: Video, Audio, or Subtitle.
 #### 3. **Select the output directory**.
 #### 4. **Press "Download"** and track progress in real-time!
 
 ---
 
-# 📚 Dependencies
+# 📚 Dependencies - --> ignore
 
-#### - `yt-dlp`: For downloading video/audio from YouTube.
-#### - `CustomTkinter`: For creating a modern and customizable GUI.
 #### - `FFmpeg`: Required for handling audio extraction and conversion (download and add to PATH if not installed).
 
 ---
