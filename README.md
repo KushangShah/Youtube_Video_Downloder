@@ -1,4 +1,4 @@
-
+ 
 <h1 align='center'>YouTube Video Downloader 🎥</h1>
 
 ---
@@ -54,20 +54,6 @@
    ```bash
    pip install -r requirements.txt
    ```
-## OR
-### Directly connect to the virtual envirment provided in this file. Just type in your terminal
-```bash
-source ytenv/bin/activate
-```
-### How to know if you are connect or not?<br>You should be able to see this in front of your name, inside the terminal:
-## Before Connecting
-```bash
-User_name@123 ~ Youtube_Video_Downloder % 
-```
-## After Connecting
-```bash
-(ytenv) User_name@123 ~ Youtube_Video_Downloder % 
-```
 
 ### 3. **Run the app:**
    ```bash
