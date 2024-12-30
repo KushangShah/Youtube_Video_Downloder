@@ -1,15 +1,16 @@
+# import module
 import yt_dlp
 
-# Function to start download
+# def download
 def start_download():
     
-    # Ask for URL
+    # ask for url
     url = input("Enter the YouTube URL: ").strip()
     if not url:
         print("Please enter a valid URL.")
         return
 
-    # Ask for options
+    # ask for options
     print("Select download option:")
     print("1. Download Video (.mp4)")
     print("2. Download Audio (.mp3)")
@@ -20,19 +21,15 @@ def start_download():
         print("Invalid option. Please try again.")
         return
 
-    # Downloading mp4 if option == 1
+    # downloading mp4 if option == 1
     ydl_opts = {}
     if option == "1":
         ydl_opts = {
-            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best',
-            'outtmpl': '%(title)s.mp4',
-            'postprocessors': [{
-                'key': 'FFmpegVideoConvertor',
-                'preferedformat': 'mp4',
-            }]
+            'format': 'bestvideo+bestaudio/best',
+            'outtmpl': '%(title)s.%(ext)s'
         }
     
-    # Downloading mp3 if option == 2
+    # downloading mp3 if option == 2
     elif option == "2":
         ydl_opts = {
             'format': 'bestaudio/best',
@@ -44,7 +41,7 @@ def start_download():
             'outtmpl': '%(title)s.%(ext)s'
         }
     
-    # Downloading subtitle if option == 3
+    # downloading subtitle if optiont == 3
     elif option == "3":
         ydl_opts = {
             'writesubtitles': True,
@@ -53,7 +50,7 @@ def start_download():
             'outtmpl': '%(title)s.%(ext)s'
         }
 
-    # Show success or error message
+    # show successfully or error mssg
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
