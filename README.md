@@ -123,15 +123,3 @@ This project is licensed under the MIT License. See [LICENSE](/LICENSE) for more
 ---
 
 Happy downloading! 🎉
-
-
-### Changes made/added:
-
-1. Simplified the description to align with the CLI-based functionality of the updated script.
-2. Removed references to CustomTkinter as the current code is CLI-based.
-3. Updated features to reflect the new implementation details (e.g., input validation, subtitle support).
-4. Enhanced the usage section to include step-by-step instructions.
-5. Minor adjustments to formatting for consistency and readability.
-6. **Steps to create and activate a virtual environment** for both Windows and macOS/Linux.
-7. **Detailed FFmpeg installation guide** for Windows, macOS, and Linux.
-8. A verification step for FFmpeg installation.
