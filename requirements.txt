@@ -1,3 +1,1 @@
-customtkinter
 yt_dlp
-pyinstaller
