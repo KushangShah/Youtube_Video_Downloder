@@ -67,7 +67,7 @@
 
 ### 5. **Run the script:**
    ```bash
-   python3 Youtube_Vid_Downloder.py
+   python3 Youtube_Vid_Downloader.py
    ```
 
 ---
