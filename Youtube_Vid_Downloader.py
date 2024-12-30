@@ -1,4 +1,5 @@
 import yt_dlp
+import os
 
 # Function to start download
 def start_download():
@@ -48,9 +49,9 @@ def start_download():
     elif option == "3":
         ydl_opts = {
             'writesubtitles': True,
-            'subtitleslangs': ['en'],
-            'skip_download': True,
-            'outtmpl': '%(title)s.%(ext)s'
+            'subtitleslangs': ['en'],  # English subtitles
+            'outtmpl': '%(title)s.%(ext)s',
+            'subtitlesformat': 'srt',  # Ensure the correct subtitle format
         }
 
     # Show success or error message
@@ -58,6 +59,15 @@ def start_download():
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
         print("Download completed successfully.")
+        print("Checking for subtitles...")
+        
+        # Check if subtitle exists
+        if ydl_opts.get('writesubtitles'):
+            subtitle_file = f"{ydl_opts['outtmpl']}.srt"  # Subtitle file should have .srt extension
+            if os.path.exists(subtitle_file):
+                print(f"Subtitle found: {subtitle_file}")
+            else:
+                print("Subtitle not found.")
     except Exception as e:
         print(f"Error: {e}")
 
