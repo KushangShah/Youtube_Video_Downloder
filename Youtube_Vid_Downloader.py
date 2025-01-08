@@ -1,6 +1,16 @@
 import yt_dlp
 import os
 
+def manage_cookies():
+    cookies_file = 'cookies.txt'
+    if os.path.exists(cookies_file):
+        print(f"Deleting old cookies file: {cookies_file}")
+        os.remove(cookies_file)
+    print("Fetching fresh cookies from the browser...")
+    os.system("yt-dlp --cookies-from-browser chrome --cookies cookies.txt")
+
+manage_cookies()
+
 # Function to start download
 def start_download():
     
