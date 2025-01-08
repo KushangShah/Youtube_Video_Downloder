@@ -1,4 +1,3 @@
-
 <h1 align='center'>YouTube Video Downloader 🎥</h1>
 
 ---
@@ -13,6 +12,7 @@
 - **Video and Audio Download Options**: Choose between **MP4** video or **MP3** audio formats.
 - **Subtitle Support**: Download subtitles in your preferred language (default: English).
 - **Error Handling**: Validates user inputs and gracefully handles exceptions.
+- **Cookie Management**: Automatically handles cookies when required, ensuring seamless downloads.
 
 ---
 
@@ -84,6 +84,15 @@
 
 ---
 
+## 🔄 Note on Cookies
+
+- The script is designed to avoid using cookies unless absolutely necessary. For most public YouTube videos, cookies are not required.
+- If you encounter issues with private or restricted content, the script will automatically manage cookies using the `manage_cookies()` function.
+- To avoid potential errors, the script deletes old `cookies.txt` files and fetches fresh cookies when needed.
+- If you still encounter issues, manually delete the `cookies.txt` file and try again.
+
+---
+
 ## 📚 Dependencies
 
 - `yt_dlp`: Core library for downloading YouTube content.
@@ -123,3 +132,4 @@ This project is licensed under the MIT License. See [LICENSE](/LICENSE) for more
 ---
 
 Happy downloading! 🎉
+
