@@ -41,12 +41,12 @@
    deactivate
    ```
 
-### 3. **Install required libraries**:
+### 3. **Install required libraries:**
    ```bash
    pip install -r requirements.txt
    ```
 
-### 4. **Install FFmpeg**:
+### 4. **Install FFmpeg:**
    - **On Windows**:
      1. Download FFmpeg from [ffmpeg.org](https://ffmpeg.org/download.html).
      2. Extract the downloaded file and add the `bin` folder to your system's PATH.
@@ -65,19 +65,40 @@
    ffmpeg -version
    ```
 
-### 5. **Run the script:**
+### 5. **Install `tkinter` and `customtkinter`**:
+   - **On Windows**:
+     ```bash
+     pip install customtkinter
+     ```
+     `tkinter` comes pre-installed with Python on Windows.
+   
+   - **On macOS**:
+     ```bash
+     brew install python-tk
+     pip install customtkinter
+     ```
+   
+   - **On Linux** (Ubuntu/Debian):
+     ```bash
+     sudo apt update
+     sudo apt install python3-tk
+     pip install customtkinter
+     ```
+
+### 6. **Run the script:**
    ```bash
    python3 Youtube_Vid_Downloader.py
    ```
-- Also you can now run app from terminal and it has few benifits.
-to run the app:
-```
-python3 app.py
-```
+- Also you can now run the app from the terminal, which has a few benefits.
+  To run the app:
+  ```bash
+  python3 app.py
+  ```
+
 ---
 
 ## 📂 Usage
-- Terminal
+- **Terminal**
 
 1. **Enter the YouTube URL** when prompted.
 2. **Choose the desired format**:  
@@ -87,9 +108,9 @@ python3 app.py
 3. Follow the prompts to complete your download.
 4. **Enjoy your downloaded content!**
 
-- App
+- **App**
 1. Same as terminal.
-2. while you are downloading one video, you can just remove previous link and past another link to start downloading another video side by side. :)
+2. While downloading one video, you can remove the previous link and paste another link to start downloading another video side by side. :)
 
 ---
 
