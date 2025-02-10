@@ -69,10 +69,15 @@
    ```bash
    python3 Youtube_Vid_Downloader.py
    ```
-
+- Also you can now run app from terminal and it has few benifits.
+to run the app:
+```
+python3 app.py
+```
 ---
 
 ## 📂 Usage
+- Terminal
 
 1. **Enter the YouTube URL** when prompted.
 2. **Choose the desired format**:  
@@ -81,6 +86,10 @@
    - **3**: Download Subtitles  
 3. Follow the prompts to complete your download.
 4. **Enjoy your downloaded content!**
+
+- App
+1. Same as terminal.
+2. while you are downloading one video, you can just remove previous link and past another link to start downloading another video side by side. :)
 
 ---
 
@@ -97,6 +106,7 @@
 
 - `yt_dlp`: Core library for downloading YouTube content.
 - `FFmpeg`: Required for audio extraction and conversion.
+- `customtkinter` and `tkinter`: App layout and functionality.
 
 ---
 
