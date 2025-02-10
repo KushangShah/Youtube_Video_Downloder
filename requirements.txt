@@ -1,1 +1,4 @@
-yt_dlp
+customtkinter
+yt-dlp
+ffmpeg
+tk
