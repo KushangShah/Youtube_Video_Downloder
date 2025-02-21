@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # 0.3
 # library
 from customtkinter import *
