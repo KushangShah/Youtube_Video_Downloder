@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# 0.3
+# 0.4
 # library
 from customtkinter import *
 from tkinter import filedialog, messagebox
@@ -88,16 +88,18 @@ class App(CTk):
         }
 
         if format_choice == "mp4":
-            options['format'] = quality_choice
-            options['writesubtitles'] = True
-            options['subtitleformat'] = 'srt'
+            if quality_choice == "best":
+                options['format'] = "bestvideo+bestaudio/best"
+            else:
+                options['format'] = "worstvideo+worstaudio/worst"
         elif format_choice == "mp3":
-            options['format'] = 'bestaudio/best'
+            options['format'] = "bestaudio/best"
             options['postprocessors'] = [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
                 'preferredquality': '192',
             }]
+
 
         try:
             with yt_dlp.YoutubeDL(options) as ydl:
@@ -111,3 +113,7 @@ class App(CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
+
+"""
+Fixed list error while downloding
+"""
